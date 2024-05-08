@@ -1,6 +1,7 @@
 <p align = "center"> 
 
-  ![5-Sales-Tips-to-Increase-Conversion-and-Accelerate-Revenue](https://github.com/coding-dojo-data-science/Project1_Exemplar/assets/158508098/fa6f1995-6ae4-4cb4-b9fc-eb62849322d2)
+  ![61Lwp7UkRvL](https://github.com/MuhannedSh/ML-Occupied-Office/assets/158508098/f20adb8b-0ab4-47a6-8e3a-0e1f6ca70317)
+
 
 </p>
 
@@ -19,7 +20,8 @@ For this dataset, there were 1758 rows and 6 columns.
 
 <p align = "center"> 
   
- <img width="290" alt="download (19)" src="https://github.com/MuhannedSh/ML-Occupied-Office/assets/158508098/2303b056-1409-46b4-a07b-cd92a6e07948">
+ ![image_2024-05-08_112309392](https://github.com/MuhannedSh/ML-Occupied-Office/assets/158508098/0628cfe3-096a-461c-9346-3e58e0751fd3)
+
 
 
 </p>
@@ -66,6 +68,7 @@ For this dataset, there were 1758 rows and 6 columns.
 
 
 - logistic Regression Model (Testing Set):
+  
   - Precision for class 0: 0.86
   - Recall for class 0: 0.80
   - F1-score for class 0: 0.83
@@ -77,6 +80,7 @@ For this dataset, there were 1758 rows and 6 columns.
 
 
 - Tuned Logistic Regression Model (Testing Set):
+  
   - Precision for class 0: 0.86
   - Recall for class 0: 0.80
   - F1-score for class 0: 0.83
@@ -88,6 +92,7 @@ For this dataset, there were 1758 rows and 6 columns.
 
   
 -  KNN Model (Testing Set):
+- 
   - recision for class 0: 0.82
   - Recall for class 0: 0.86
   - F1-score for class 0: 0.84
@@ -98,6 +103,7 @@ For this dataset, there were 1758 rows and 6 columns.
   - Support for class 1: 136
 
 - Tuned KNN (Testing Set):
+  
   - Precision for class 0: 0.86
   - Recall for class 0: 0.82
   - F1-score for class 0: 0.84
@@ -106,41 +112,52 @@ For this dataset, there were 1758 rows and 6 columns.
   - Recall for class 1: 0.81
   - F1-score for class 1: 0.79
   - Support for class 1: 136
+    
+
+- Default Random Forest Classifier (Testing Set):
+
+  - Precision for class 0: 0.76
+  - Recall for class 0: 0.83
+  - F1-score for class 0: 0.79
+  - Support for class 0: 194
+  - Precision for class 1: 0.72
+  - Recall for class 1: 0.62
+  - F1-score for class 1: 0.67
+  - Support for class 1: 136
+
+
+- Tuned Random Forest Classifier (Testing Set):
+
+  - Precision for class 0: 0.80
+  - Recall for class 0: 0.85
+  - F1-score for class 0: 0.82
+  - Support for class 0: 194
+  - Precision for class 1: 0.77
+  - Recall for class 1: 0.70
+  - F1-score for class 1: 0.73
+  - Support for class 1: 136
+
+ 
+- Random forest classifier using SMOTE (Testing Set):
+
+  - Precision for class 0: 0.89
+  - Recall for class 0: 0.80
+  - F1-score for class 0: 0.85
+  - Support for class 0: 194
+  - Precision for class 1: 0.75
+  - Recall for class 1: 0.86
+  - F1-score for class 1: 0.80
+  - Support for class 1: 136
 
 
 
+- The Final Model Chosen was a `Random Forest Classifier with SMOTE preprocessing`.
+- Recall for Occupied (Class 1): `86%`. 
+- Recall for Not Occupied (Class 0) `80%`.
 
 
-- The Final Model Chosen was a `Random Forest Regressor Model` with the n_estimators tuned to 50.
-- For the testing set on the model, `56.3%` of the variance in y was explained by x. 
-- The Mean Absolute Error was off by about `$31,998.94`.
-- The Mean Squared Error was `$2,044,264,641.83`.
-- The Root Mean Squared Error had a calculation of `$45,213.55`.
-
-Using this model to make predictions about the best places to live and which careers to choose to earn the most money would not be a very reliable. Considering the previous regression metrics from how the model performed, there is a disparity between the R^2 score and also the Root Mean Squared Error that cannot be ignored.
-
-## Recommendations
-
-Data Science Insights
-
-- For those who have an interest in Data Science:
-  - Data Analytics Leads & Principal Data Engineers earn the most amount of money. However, this are usually not entry level careers and I would recommend going through a program, like Coding Dojo, where you can earn your data science certificate and then map out your career to these positions.
-
-  - Data Engineers & Data Scientists have the most 100% remote positions. So, if you are wanting to work from home, or work from anywhere in the world, choosing one of the top five remote positions would be a good choice to build your career upon.
-  
-  - Lastly, the trend for the last three years show that data science and related fields are increasingly earning more money each year. So, choosing a career in one of these fields can be very lucrative.
-
-Model Performance
-- Overall, the best model is definitely the tuned Random Forest Regressor Model. There was still some bias in the model, but by far it outperformed the linear regression model. 
+The Random Forest model with SMOTE preprocessing achieved the highest recall for both classes, indicating its effectiveness in correctly identifying occupied and unoccupied office rooms. This model can be considered for deployment in your application to predict office room occupancy based on the provided measurements.
 
 
-## Limitations & Next Steps
 
-From here, a student could use the insights from the visuals on how to tailor their path for their career. As mentioned before, Coding Dojo has a fantastic program that prepares inspiring data scientists for the field of data science. 
-
-## For Further Information
-
-For any additional questions, please contact: 
-- Sherlin Whaley (Data Science Instructor)
-- swhaley@codingdojo.com
 
